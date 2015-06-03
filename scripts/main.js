@@ -38,9 +38,7 @@
 
   function renderChat() {
     getMessages();
-    $('.application').html(JST['chat'](incomingMessages));
-    
-//    console.log('username:', username);
+    $('.application').html(JST['chat']());
     }
     
   function getMessages() {
@@ -49,7 +47,6 @@
   	 }).then(function(incomingMessages){
        console.log(incomingMessages);
        $('.application').html(JST['chat'](incomingMessages));
-
      });
     }
   	
