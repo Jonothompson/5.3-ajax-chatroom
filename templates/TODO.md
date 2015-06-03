@@ -5,7 +5,7 @@
 - [x] Implement login
   - [x] Save the user data in a variable so it can be added to message
   - [x] Redirect to chat screen upon login
-- [ ] Log a list of messages from the server
+- [x] Log a list of messages from the server
 - [ ] Display a list of messages from the server
 - [ ] Implement form to create a new message
 - [ ] Fetch new messages every 30 seconds and display fetched messages.

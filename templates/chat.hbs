@@ -1,6 +1,9 @@
- <form class="chat-form" method="post">
+ <form class="chat-form">
     <input class="chat-form-message" type="text" placeholder="Write your message">
     <input type="submit" value="Send">
   </form>
   
-  <p>{{data}}</p>
+  {{#each incomingMessages}}
+      <h2>{{incomingMessages.username}}</h2>
+      <p>{{incomingMessages.content}}</p>
+  {{/each}}

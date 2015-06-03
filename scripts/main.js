@@ -3,7 +3,7 @@
 
   var username = '';
   
-  var messages = []
+  var messages = "";
   
   var currentTime = new Date();
   
@@ -37,23 +37,26 @@
   }
 
   function renderChat() {
-    $('.application').html(JST['chat']());
-    console.log('username:', username);
+    getMessages();
+    $('.application').html(JST['chat'](incomingMessages));
+    
+//    console.log('username:', username);
+    }
+    
+  function getMessages() {
     $.ajax({
       url: "http://tiny-lasagna-server.herokuapp.com/collections/messages/",
-  	 }).then(function(data){
-       $('.application').html(JST['chat'](data));
-       console.log(data);
-//       setInterval(1000)
+  	 }).then(function(incomingMessages){
+       console.log(incomingMessages);
+       $('.application').html(JST['chat'](incomingMessages));
+
      });
-     
- 
+    }
+  	
+    
    $(document).on('submit', '.chat-form', function(event){
-        event.preventDefault();
-        textEntered = $(this).find('.chat-form-message').val();
-        window.location.hash = '/chat';
-        console.log(username, currentTime, textEntered);
-        
+     event.preventDefault();
+     textEntered = $(this).find('.chat-form-message').val();
    $.ajax({
      url: "http://tiny-lasagna-server.herokuapp.com/collections/messages/",
      type: "POST",
@@ -63,9 +66,8 @@
        message: textEntered,
      }
    }); 
-      });
-    }
-  	
+   getMessages();
+ });
 
 
         function deleteInvalidMessages(){
@@ -87,5 +89,5 @@
         });
       });
     } 
-
+// window.setInterval(1000);
 })();
