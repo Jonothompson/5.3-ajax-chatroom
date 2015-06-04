@@ -3,10 +3,11 @@
     <input type="submit" value="Send">
   </form>
   <ul>
-     <li>
   {{#each this}}
+     <li>
       <h2>{{username}}</h2>
+      <p>{{message}}</p>
       <p>{{content}}</p>
+     </li>
   {{/each}}
-    </li>
   </ul>
