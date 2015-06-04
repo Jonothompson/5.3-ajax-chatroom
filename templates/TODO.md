@@ -1,0 +1,11 @@
+- [x] HTML structure and layout
+  - [x] HTML structure and layout for login screen
+  - [x] Respond to URL changes by loading login on '/' and a (for now) empty chat screen on '/chat'
+  - [x] HTML structure and layout for chat screen
+- [x] Implement login
+  - [x] Save the user data in a variable so it can be added to message
+  - [x] Redirect to chat screen upon login
+- [x] Log a list of messages from the server
+- [x] Display a list of messages from the server
+- [x] Implement form to create a new message
+- [ ] Fetch new messages every 30 seconds and display fetched messages.

@@ -18,4 +18,46 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+  background-image: url('http://rack.0.mshcdn.com/media/ZgkyMDEzLzAzLzE1LzlhL3RpbmNhbnBob25lLmRhNDE1LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/d84fd180/c0f/tin-can-phone.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
 }
+
+.hip-logo {
+  height: 400px;
+  margin-left: 700px;
+}
+
+.login-form {
+  text-align: right;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+
+input  {
+    line-height: 25px;
+}
+
+.chat-form {
+  text-align: right;
+  margin-right: 115px;
+  margin-top: 50px;
+
+}
+
+ul {
+  text-align: right;
+  margin-right: 100px;
+  margin-left: 1015px;
+  margin-top: 25px;
+  border: 1px solid #333;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+  li {
+    list-style: none;
+    border-bottom: 1px dashed #ddd;
+  }
