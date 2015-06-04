@@ -17,5 +17,5 @@ this["JST"]["chat"] = Handlebars.template({"1":function(depth0,helpers,partials,
     + "  </ul>";
 },"useData":true});
 this["JST"]["login"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return " <form class=\"login-form\" method=\"post\">\n    <input class=\"login-form-username\" type=\"text\" placeholder=\"Username\">\n    <input type=\"submit\" value=\"Log In\">\n  </form>";
+    return "  <div class=\"hip-logo\">\n        <img src=\"hipsterlogogenerator_1433420519598.png\" alt=\"hipster-logo\">\n  </div>\n\n <form class=\"login-form\" method=\"post\">\n    <input class=\"login-form-username\" type=\"text\" placeholder=\"Username\">\n    <input type=\"submit\" value=\"Log In\">\n  </form>";
 },"useData":true});
